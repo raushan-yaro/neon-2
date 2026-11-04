@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7257ff">
+  <title>NEON Fashion Store</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    NEW SEASON, NEW ENERGY — UP TO 40% OFF
+    <span class="announcement-sep">✦</span>
+    FREE SHIPPING ON ORDERS ₹1,499+
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#home">N<span>E</span>ON<span class="logo-dot">.</span></a>
+
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">Our Story</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fa-regular fa-moon"></i>
+        </button>
+        <button class="icon-btn" id="wishlistButton" aria-label="Open wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="count" id="wishCount">0</span>
+        </button>
+        <button class="icon-btn" id="cartButton" aria-label="Open shopping bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="count" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Fashion hero section -->
+    <section class="hero container reveal" id="home">
+      <div class="hero-photo" role="img" aria-label="Fashion models wearing modern streetwear"></div>
+      <div class="hero-shade"></div>
+
+      <div class="hero-content">
+        <span class="eyebrow">
+          <span class="eyebrow-line"></span>
+          THE NEW SEASON IS HERE
+        </span>
+
+        <h1>DON'T JUST<br>WEAR IT.<br><span>OWN THE LOOK.</span></h1>
+
+        <p>
+          Fresh fits. Bold energy. Discover pieces that make every day your runway.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-light">
+            Explore Collection <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#categories" class="text-link">
+            Find your style <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <i class="fa-solid fa-sparkles"></i> Your style, your rules.
+        </div>
+      </div>
+
+      <div class="hero-sticker">
+        <strong>NEW</strong>
+        <span>DROP<br>2026</span>
+      </div>
+
+      <div class="hero-bottom-label">
+        NEON STUDIO / EVERYDAY STREETWEAR
+      </div>
+    </section>
+
+    <!-- Clickable store benefits -->
+    <section class="container benefits reveal" aria-label="Store information">
+      <button class="benefit" data-info="shipping">
+        <span class="benefit-icon"><i class="fa-solid fa-truck-fast"></i></span>
+        <span>
+          <strong>Free Shipping</strong>
+          <small>On orders ₹1,499+</small>
+        </span>
+        <i class="fa-solid fa-arrow-up-right-from-square benefit-arrow"></i>
+      </button>
+
+      <button class="benefit" data-info="secure">
+        <span class="benefit-icon"><i class="fa-solid fa-shield-halved"></i></span>
+        <span>
+          <strong>Secure Shopping</strong>
+          <small>Your details matter</small>
+        </span>
+        <i class="fa-solid fa-arrow-up-right-from-square benefit-arrow"></i>
+      </button>
+
+      <button class="benefit" data-info="returns">
+        <span class="benefit-icon"><i class="fa-solid fa-rotate-left"></i></span>
+        <span>
+          <strong>Easy Returns</strong>
+          <small>7-day return window*</small>
+        </span>
+        <i class="fa-solid fa-arrow-up-right-from-square benefit-arrow"></i>
+      </button>
+
+      <button class="benefit" data-info="support">
+        <span class="benefit-icon"><i class="fa-solid fa-headset"></i></span>
+        <span>
+          <strong>Support Desk</strong>
+          <small>Here to help</small>
+        </span>
+        <i class="fa-solid fa-arrow-up-right-from-square benefit-arrow"></i>
+      </button>
+    </section>
+
+    <!-- Categories -->
+    <section class="section container reveal" id="categories">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow dark-eyebrow">PICK YOUR VIBE</span>
+          <h2>Shop by <span>category.</span></h2>
+          <p>Good looks start with the right essentials.</p>
+        </div>
+        <a href="#shop" class="text-link">
+          All products <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="categories">
+        <button class="category-card" data-category="T-Shirts">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85" alt="Casual T-shirt">
+          <span class="category-label">T-Shirts <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          <span class="category-index">01</span>
+        </button>
+
+        <button class="category-card" data-category="Sneakers">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85" alt="Red sneaker">
+          <span class="category-label">Sneakers <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          <span class="category-index">02</span>
+        </button>
+
+        <button class="category-card" data-category="Hoodies">
+          <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=85" alt="Hoodie">
+          <span class="category-label">Hoodies <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          <span class="category-index">03</span>
+        </button>
+
+        <button class="category-card" data-category="Accessories">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=85" alt="Minimal watch">
+          <span class="category-label">Accessories <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          <span class="category-index">04</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section container reveal" id="shop">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow dark-eyebrow">THE PEOPLE'S PICKS</span>
+          <h2>Trending <span>right now.</span></h2>
+          <p>Pieces made to move with you.</p>
+        </div>
+        <div class="product-total">
+          <span id="resultCount">36</span> styles
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" id="search" placeholder="Search products..." aria-label="Search products">
+        </label>
+
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="All">All categories</option>
+          <option>T-Shirts</option>
+          <option>Sneakers</option>
+          <option>Hoodies</option>
+          <option>Accessories</option>
+        </select>
+
+        <select id="sort" aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+          <option value="rating">Top rated</option>
+        </select>
+
+        <button class="btn btn-outline" id="resetFilters">Reset</button>
+      </div>
+
+      <div class="products" id="products"></div>
+    </section>
+
+    <!-- Promotional banner -->
+    <section class="container promo-section reveal">
+      <div class="promo-image"></div>
+      <div class="promo-content">
+        <span class="eyebrow">A LITTLE MORE YOU</span>
+        <h2>Make room for<br>something <em>NEON.</em></h2>
+        <p>Build a wardrobe that feels like you. Discover your next everyday favourite.</p>
+        <a href="#shop" class="btn btn-light">
+          Find your fit <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="promo-orbit">STYLE<br>WITHOUT<br>RULES ✳</div>
+    </section>
+
+    <!-- About section -->
+    <section class="section container reveal" id="about">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow dark-eyebrow">THE NEON POINT OF VIEW</span>
+          <h2>More than <span>a fit.</span></h2>
+          <p>Everyday pieces. Main-character energy.</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card about-card-large">
+          <span class="about-number">01 /</span>
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <h3>Wear your confidence.</h3>
+          <p>NEON is a fashion storefront concept for bold everyday style — streetwear, sneakers, hoodies and accessories in one place.</p>
+        </div>
+
+        <div class="about-card">
+          <span class="about-number">02 /</span>
+          <i class="fa-solid fa-shirt"></i>
+          <h3>Easy to explore.</h3>
+          <p>Browse by category, search your favourites, sort by price and preview products before adding them to your bag.</p>
+        </div>
+
+        <div class="about-card">
+          <span class="about-number">03 /</span>
+          <i class="fa-solid fa-heart"></i>
+          <h3>Made for your vibe.</h3>
+          <p>Save products to your wishlist and switch between light and dark mode whenever you like.</p>
+        </div>
+      </div>
+
+      <p class="demo-note">
+        *College project demo: shipping, returns, support and checkout information is illustrative. No real orders or payments are processed.
+      </p>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter reveal" id="newsletter">
+      <div class="newsletter-inner">
+        <span class="eyebrow">THE NEON LIST</span>
+        <h2>Get the good stuff <span>first.</span></h2>
+        <p>Join the list for collection updates and style inspiration.</p>
+
+        <form id="newsletterForm">
+          <label class="sr-only" for="email">Email address</label>
+          <input type="email" id="email" placeholder="Enter your email address" required>
+          <button class="btn btn-dark" type="submit">
+            Join the club <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+
+        <small>No spam. Just good style.</small>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container" id="contact">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="#home">N<span>E</span>ON<span class="logo-dot">.</span></a>
+        <p>Wear your confidence.<br>Find your vibe.</p>
+        <div class="social">
+          <a href="#contact" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#contact" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#contact" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>EXPLORE</h4>
+        <a href="#shop">All products</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">Our story</a>
+      </div>
+
+      <div>
+        <h4>NEED HELP?</h4>
+        <button class="footer-action" data-info="shipping">Shipping info</button>
+        <button class="footer-action" data-info="returns">Returns policy</button>
+        <button class="footer-action" data-info="support">Contact support</button>
+      </div>
+
+      <div>
+        <h4>THE DETAILS</h4>
+        <a href="#about">About NEON</a>
+        <a href="#about">Demo disclaimer</a>
+        <a href="#newsletter">Newsletter</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 NEON Fashion Store</span>
+      <span>Made for bold everyday style ✳</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
